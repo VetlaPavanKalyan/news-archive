@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #e2e8f0;
+}
+
+/* Remove border from the react-calendar tiles */
+.react-calendar__tile {
+  border: none;
+}
+
+/* Add background color to the active date in the react-calendar */
+.react-calendar__tile--active {
+  background-color: #22d3ee; /* Set your desired background color */
+}
+
+.react-calendar__tile:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  background-color: #bae6fd;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  box-shadow: inset 0 0 10px #22d3ee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
